@@ -28,5 +28,6 @@ Pod::Spec.new do |s|
   s.source_files  = 'MotionOrientation.{h,m}'
   s.preserve_paths = "README.md"
   s.frameworks = 'CoreMotion', 'CoreGraphics'
+  s.module_name = "MotionOrientation"
 
 end
