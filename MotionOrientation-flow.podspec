@@ -1,10 +1,10 @@
 
 Pod::Spec.new do |s|
 
-  s.name         = "MotionOrientation@PTEz"
+  s.name         = "MotionOrientation-flow"
   s.version      = "1.1.0"
   s.summary      = "Orientation change notifications using CoreMotion. Works even on orientation-locked devices."
-  s.homepage     = "https://github.com/PTEz/MotionOrientation"
+  s.homepage     = "https://github.com/Flowever/MotionOrientation"
   
   s.license      = { :type => 'Apache License, Version 2.0', :text => <<-LICENSE
       Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   
   s.platform     = :ios
   s.requires_arc = true
-  s.source       = { :git => "https://github.com/PTEz/MotionOrientation.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/Flowever/MotionOrientation.git", :tag => "#{s.version}-flow" }
   s.source_files  = 'MotionOrientation.{h,m}'
   s.preserve_paths = "README.md"
   s.frameworks = 'CoreMotion', 'CoreGraphics'

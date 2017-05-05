@@ -1,10 +1,10 @@
 
 Pod::Spec.new do |s|
 
-  s.name         = "MotionOrientation"
-  s.version      = "0.0.1"
-  s.summary      = "An observer to notify the orientation of iOS device changed, using CoreMotion for taking the orientation in 'Orientation Lock'."
-  s.homepage     = "https://github.com/tastyone/MotionOrientation"
+  s.name         = "MotionOrientation@PTEz"
+  s.version      = "1.1.0"
+  s.summary      = "Orientation change notifications using CoreMotion. Works even on orientation-locked devices."
+  s.homepage     = "https://github.com/PTEz/MotionOrientation"
   
   s.license      = { :type => 'Apache License, Version 2.0', :text => <<-LICENSE
       Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,10 +20,11 @@ Pod::Spec.new do |s|
       limitations under the License.
       LICENSE
   }
-  s.author       = { "Sangwon Park" => "" }
+  s.author       = { "Ernesto Rivera" => "rivera.ernesto@gmail.com", "Sangwon Park" => "" }
   
   s.platform     = :ios
-  s.source       = { :git => "https://github.com/tastyone/MotionOrientation.git", :commit => "f99e0aaf66cde5e977dc5218b920cde7154ce445" }
+  s.requires_arc = true
+  s.source       = { :git => "https://github.com/PTEz/MotionOrientation.git", :tag => "#{s.version}" }
   s.source_files  = 'MotionOrientation.{h,m}'
   s.preserve_paths = "README.md"
   s.frameworks = 'CoreMotion', 'CoreGraphics'
