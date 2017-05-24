@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "MotionOrientation-flow"
-  s.version      = "1.1.0"
+  s.version      = "1.1.1"
   s.summary      = "Orientation change notifications using CoreMotion. Works even on orientation-locked devices."
   s.homepage     = "https://github.com/Flowever/MotionOrientation"
   
